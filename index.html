@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HTML CSS ZNACZNIKI ★☆☆☆☆</title>
+</head>
+
+<body>
+    <section class="sectionOne">
+        <!-- PODSTAWOWE ZNACZNIKI -->
+        <!-- nagłówki od 1 do 6-->
+        <h2 class="myTitle">Nagłówki</h2>
+        <h1 class="rotate">H1</h1>
+        <h2 class="rotate">H2</h2>
+        <h3 class="rotate">H3</h3>
+        <h4 class="rotate">H4</h4>
+        <h5 class="rotate">H5</h5>
+        <h6 class="rotate">H6</h6>
+
+        <!-- spam, nowa linia, linia, paragraf -->
+        <h2 class="myTitle">Span, paragraf itp.</h2>
+        <p>Treść paragrafu<br> br
+            <hr> hr </p> <span>  span</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam magni labore eum non cumque ipsam laudantium quas et atque.
+        </p>
+
+        <!-- link -->
+        <h2 class="myTitle">Linki i odnośniki</h2>
+        <h3 class="myTitleTwo">Link do innej strony - GOOGLE</h3>
+        <a href="https://google.pl" id="link-id" class="class-id">Link do google</a>
+
+        <h3 class="myTitleTwo">Link do innej strony (nowa karta) - GOOGLE</h3>
+        <a href="https://google.pl" target="_blank" id="link-id" class="class-id">Link do google</a>
+
+        <h3 class="myTitleTwo">Link do kotwicy na stronie</h3>
+        <a href="#sectionTwoId">Link do kotwicy [sekcja2]</a>
+
+        <h3 class="myTitleTwo">Link wewnętrzny</h3>
+        <a href="podstrona.html">podsrtona</a>
+
+        <h3 class="myTitleTwo">Link email</h3>
+        <a href="mailto:adres@poczta.pl">Mail</a>
+
+        <h3 class="myTitleTwo">Link Telefon</h3>
+        <a href="tel:111 111 111">111 111 111</a>
+
+        <!-- Grafika -->
+        <h2 class="myTitle">Grafika</h2>
+        <br>
+        <img src="https://cdn.pixabay.com/photo/2020/12/21/08/36/dog-5849152_1280.jpg" width="300px" alt="Pies (pixabay.com)">
+        <img style="display: inline-block; border-radius: 60%;" src="https://cdn.pixabay.com/photo/2020/12/21/08/36/dog-5849152_1280.jpg" width="300px" alt="Pies (pixabay.com)">
+
+        <!-- listy Emmet-->
+        <h2 class="myTitle">Listy</h2>
+        <ul>
+            <li>List item1</li>
+            <li>List item2</li>
+        </ul>
+        <ul id="list">
+            <li>List item1</li>
+            <li>List item2</li>
+        </ul>
+        <ol>
+            <li>List item1</li>
+            <li>List item2</li>
+        </ol>
+
+        <!-- elementy blokowe -->
+        <h2 class="myTitle">Elementy blokowe i liniowe</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, rem.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+
+        <!-- elementy liniowe -->
+        <a href="">Lorem ipsum dolor sit amet.</a>
+        <a href="">Lorem ipsum dolor sit amet.</a>
+        <span>Lorem ipsum dolor sit amet.</span>
+
+        <!-- połączenie -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Harum delectus quae ex aliquam </span>nulla <a href="">pariatur ipsa possimus</a> repellat perspiciatis libero.</p>
+    </section>
+    <section class="sectionTwo" id="sectionTwoId">
+        <!-- tabela -->
+        <h2 class="myTitle">Tabele</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>(Produkt) thead td1</td>
+                    <td>(Ilość) thead td2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produkt 1 - tbody tr td</td>
+                    <td>100 szt. - tbody tr td</td>
+                </tr>
+                <tr>
+                    <td>Produkt 2 - tbody tr td</td>
+                    <td>50 szt. - tbody tr td</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>razem - tfoot</td>
+                    <td>150 - tfoot</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section class="sectionThree">
+        <!-- Formularz -->
+        <h2 class="myTitle">Formularz</h2>
+
+        <form action="" method="GET">
+            <label> <input type="text" name="username" required>Nazwa Użytkownika</label> <br> <br>
+            <label><input type="email" name="email" placeholder="mail@mail.pl">Email</label> <br> <br>
+            <label> <input type="number" name="quantity"  min="1" max="10">Qty.</label> <br> <br>
+            <input type="textarea" name="massage" maxlength="50"> <br> <br>
+            <input type="checkbox" name="agreement">Wyrażam zgodę<br>
+            <input type="radio" name="choise">Tak <br>
+            <input type="radio" name="choise">Nie <br> <br>
+            <select name="city">
+               <option value="Kraków">Kraków</option>
+               <option value="Warszawa" selected>Warszawa</option>
+           </select><br> <br>
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
+    <section class="sectionFour">
+        <!-- iframe -->
+        <h2 class="myTitle">iframe</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_d4yW6Lz_1o?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- iframe -->
+        <h2 class="myTitle">SVG</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+          </svg>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
